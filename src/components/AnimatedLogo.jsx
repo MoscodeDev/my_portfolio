@@ -32,7 +32,7 @@ const MosCodeLogo = () => {
   };
 
   return (
-    <div className="min-h-[60vh] bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center px-4 sm:px-6 md:px-10 font-mono">
+    <div className="min-h-[60vh] md:min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center px-4 sm:px-6 md:px-10 font-mono">
       <motion.div
         variants={containerVariants}
         initial="hidden"

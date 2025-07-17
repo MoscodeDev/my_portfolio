@@ -2,8 +2,11 @@ import React from "react";
 import { motion } from 'framer-motion';
 import AnimatedLogo from "./AnimatedLogo";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const Overview = () => {
+
+  const navigate = useNavigate()
   return (
     <section className="min-h-screen bg-white z-40 rounded-tl-4xl sticky top-0">
       <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
@@ -20,8 +23,8 @@ const Overview = () => {
             I'm a React developer passionate about building modern, responsive, scalable, and secure web applications.
           </p>
 
-          <div className="flex items-center pt-6 text-green-700 hover:text-green-900 transition">
-            <span className="pr-1 text-sm sm:text-base">Know more / Hire me</span>
+          <div className="flex items-center pt-6 text-green-700 hover:text-green-900 transition cursor-pointer" onClick={() => navigate("/contact")}>
+            <span className="pr-1 text-sm sm:text-base" >Know more / Hire me</span>
             <IoIosArrowRoundForward className="text-lg sm:text-xl" />
           </div>
         </div>
