@@ -2,13 +2,15 @@ import React from 'react'
 import { toast } from 'react-toastify';
 import shop from '../assets/shop.jpg';
 import shopweb from '../assets/shopweb.avif';
+import jobmate from '../assets/jobmate.jpeg';
 import school from "../assets/school.png";
 
 const cards = [
   {
     title: 'Project One',
-    image: shopweb,
-    description: 'E-commerce website',
+    image: jobmate,
+    description: 'Career tool website',
+    source: "https://moscodedev.github.io/jobmate_frontend/"
   },
   {
     title: 'Project Two',
@@ -29,7 +31,12 @@ const ProjectList = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
       {cards.map((card, index) => (
         <div key={index}
-        onClick={()=> toast.success("⏳ Hold on... coming soon!")}
+        onClick={()=> {
+          if (card.source) {
+            window.location.href = card.source;
+          } else {
+          toast.success("⏳ Hold on... coming soon!");
+          }}}
          className="bg-gray-100 p-4 rounded-lg shadow-md">
           <img
             src={card.image}
