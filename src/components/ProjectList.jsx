@@ -9,7 +9,7 @@ const cards = [
   {
     title: 'Project One',
     image: jobmate,
-    description: 'Career tool website',
+    description: 'Career tool website (Jobmate).',
     source: "https://moscodedev.github.io/jobmate_frontend/"
   },
   {
