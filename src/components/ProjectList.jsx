@@ -2,7 +2,7 @@ import React from 'react'
 import { toast } from 'react-toastify';
 import shop from '../assets/shop.jpg';
 import shopweb from '../assets/shopweb.avif';
-import jobmate from '../assets/jobmate.jpeg';
+import jobmate from '../assets/jobmate.png';
 import school from "../assets/school.png";
 
 const cards = [
