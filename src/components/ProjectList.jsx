@@ -4,10 +4,17 @@ import shop from '../assets/shop.jpg';
 import shopweb from '../assets/shopweb.avif';
 import jobmate from '../assets/jobmate.png';
 import school from "../assets/school.png";
+import errand_bay from "../assets/errand_bay.png"
 
 const cards = [
   {
     title: 'Project One',
+    image: errand_bay,
+    description: 'E-commerce app (Errand Bay).',
+    source: "https://moscodedev.github.io/errand_bay_client/"
+  },
+  {
+    title: 'Project Two',
     image: jobmate,
     description: 'Career tool website (Jobmate).',
     source: "https://moscodedev.github.io/jobmate_frontend/"
@@ -16,11 +23,6 @@ const cards = [
     title: 'Project Two',
     image: school,
     description: 'School management system.',
-  },
-  {
-    title: 'Project Three',
-    image: shop,
-    description: 'E-commerce app.',
   },
 ];
 
@@ -33,7 +35,7 @@ const ProjectList = () => {
         <div key={index}
         onClick={()=> {
           if (card.source) {
-            window.location.href = card.source;
+            window.open(card.source, "_blank");
           } else {
           toast.success("⏳ Hold on... coming soon!");
           }}}
