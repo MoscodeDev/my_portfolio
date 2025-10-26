@@ -2,27 +2,28 @@ import React from 'react'
 import { toast } from 'react-toastify';
 import shop from '../assets/shop.jpg';
 import shopweb from '../assets/shopweb.avif';
-import jobmate from '../assets/jobmate.png';
-import school from "../assets/school.png";
+import mkatoliki from '../assets/mkatoliki.png';
+import jobmate from "../assets/jobmate.png";
 import errand_bay from "../assets/errand_bay.png"
 
 const cards = [
   {
     title: 'Project One',
     image: errand_bay,
-    description: 'E-commerce app (Errand Bay).',
+    description: 'Errands App.',
     source: "https://moscodedev.github.io/errand_bay_client/"
   },
   {
     title: 'Project Two',
-    image: jobmate,
-    description: 'Career tool website (Jobmate).',
-    source: "https://moscodedev.github.io/jobmate_frontend/"
+    image: mkatoliki,
+    description: 'Ecommerce app.',
+    source: "https://mkatoliki.buzz/"
   },
   {
-    title: 'Project Two',
-    image: school,
-    description: 'School management system.',
+    title: 'Project Three',
+    image: jobmate,
+    description: 'Career tool website (Jobmate).',
+    source:'https://moscodedev.github.io/jobmate_frontend/'
   },
 ];
 
